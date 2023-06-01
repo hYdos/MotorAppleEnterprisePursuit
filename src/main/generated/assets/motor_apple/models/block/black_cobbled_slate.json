@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "motor_apple:block/black_cobbled_slate"
+  }
+}

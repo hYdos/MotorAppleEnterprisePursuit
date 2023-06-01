@@ -30,10 +30,21 @@
 - Concrete but it cracks without rebar.
 - Reduce clay use as much as possible. Fuck clay.
 - "Contraptions" will be buildable throughout brass onwards.
+- Coffee and Tea
+- falling to your death destroys pottery such as water jug
+- Opal as a durable sharp rock. 
+- Optional water cutting instead of heating if far enough and got pressure system
 
 ### Things to figure out
 - Power
 - Make gravel and sand easier to get
+
+### Rocks present in game
+- slate (blue, dark gray)
+- pumice (white)
+- conglomerate (greenish gray with different shades of gray in it. gravel can be extracted)
+- hornfels (layers)
+- rhyolite (blue-black, orange washed out, gray)
 
 ### Very Early Game Stages
 1. use rocks on floor to break wood
