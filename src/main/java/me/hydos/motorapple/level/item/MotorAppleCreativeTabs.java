@@ -20,6 +20,11 @@ public class MotorAppleCreativeTabs {
             entries.accept(new ItemStack(MotorAppleBlocks.BLACK_SLATE));
             entries.accept(new ItemStack(MotorAppleBlocks.BLACK_DEEP_SLATE));
             entries.accept(new ItemStack(MotorAppleBlocks.BLACK_COBBLED_SLATE));
+            entries.accept(new ItemStack(MotorAppleBlocks.BLACK_COBBLE_SLATE));
+            entries.accept(new ItemStack(MotorAppleBlocks.BLUE_SLATE));
+            entries.accept(new ItemStack(MotorAppleBlocks.BLUE_DEEP_SLATE));
+            entries.accept(new ItemStack(MotorAppleBlocks.BLUE_COBBLED_SLATE));
+            entries.accept(new ItemStack(MotorAppleBlocks.BLUE_COBBLE_SLATE));
         });
     }
 
@@ -27,7 +32,7 @@ public class MotorAppleCreativeTabs {
         var id = MotorApple.id(name);
         var key = ResourceKey.create(Registries.CREATIVE_MODE_TAB, id);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, key.location(), FabricItemGroup.builder()
-                .title(Component.translatable("itemGroup." + id.getPath()))
+                .title(Component.translatable(id.getNamespace() + ".item_group." + id.getPath()))
                 .icon(icon)
                 .build());
         ItemGroupEvents.modifyEntriesEvent(key).register(listener);

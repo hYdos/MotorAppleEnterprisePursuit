@@ -8,7 +8,7 @@ public class MotorAppleDataGen implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator generator) {
         var builtin = generator.createPack();
-        builtin.addProvider(MotorAppleBlockDataGen::new);
+        builtin.addProvider(MotorAppleBlockItemDataGen::new);
         builtin.addProvider(MotorAppleEnUsDataGen::new);
     }
 }

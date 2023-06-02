@@ -1,0 +1,28 @@
+{
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [11, 1, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 6, 1], "texture": "#texture"},
+				"east": {"uv": [0, 0, 5, 1], "texture": "#texture"},
+				"south": {"uv": [0, 0, 6, 1], "texture": "#texture"},
+				"west": {"uv": [0, 0, 5, 1], "texture": "#texture"},
+				"up": {"uv": [0, 0, 6, 5], "texture": "#texture"},
+				"down": {"uv": [0, 0, 6, 5], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [6, 1, 6],
+			"to": [9, 2, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 1], "texture": "#texture"},
+				"east": {"uv": [0, 0, 3, 1], "texture": "#texture"},
+				"south": {"uv": [0, 0, 3, 1], "texture": "#texture"},
+				"west": {"uv": [0, 0, 3, 1], "texture": "#texture"},
+				"up": {"uv": [0, 0, 3, 3], "texture": "#texture"},
+				"down": {"uv": [0, 0, 3, 3], "texture": "#texture"}
+			}
+		}
+	]
+}

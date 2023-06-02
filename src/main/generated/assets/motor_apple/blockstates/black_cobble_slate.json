@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "motor_apple:block/floor_rock"
+      },
+      {
+        "model": "motor_apple:block/floor_rock2"
+      },
+      {
+        "model": "motor_apple:block/floor_rock3"
+      }
+    ]
+  }
+}

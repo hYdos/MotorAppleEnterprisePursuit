@@ -12,6 +12,6 @@ public class MotorAppleEnUsDataGen extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(TranslationBuilder builder) {
-        builder.add(MotorApple.id("itemGroup.motor_apple_enterprise_pursuit"), "Motor Apple Enterprise Pursuit");
+        builder.add(MotorApple.id("item_group.motor_apple_enterprise_pursuit"), "Motor Apple Enterprise Pursuit");
     }
 }
