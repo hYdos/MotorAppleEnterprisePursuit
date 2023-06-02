@@ -4,6 +4,7 @@ import me.hydos.motorapple.MotorApple;
 import me.hydos.motorapple.level.block.MotorAppleBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.models.BlockModelGenerators;
 import net.minecraft.data.models.ItemModelGenerators;
 import net.minecraft.data.models.blockstates.MultiVariantGenerator;
@@ -19,7 +20,9 @@ import net.minecraft.world.level.block.Block;
 import java.util.Optional;
 
 public class MotorAppleBlockItemDataGen extends FabricModelProvider {
-    public static final ModelTemplate FLOOR_BLOCK_MODEL = new ModelTemplate(Optional.empty(), Optional.empty(), TextureSlot.TEXTURE);
+    public static final ModelTemplate FLOOR_BLOCK_MODEL1 = new ModelTemplate(Optional.of(MotorApple.id("block/floor_rock")), Optional.empty(), TextureSlot.TEXTURE);
+    public static final ModelTemplate FLOOR_BLOCK_MODEL2 = new ModelTemplate(Optional.of(MotorApple.id("block/floor_rock2")), Optional.of("2"), TextureSlot.TEXTURE);
+    public static final ModelTemplate FLOOR_BLOCK_MODEL3 = new ModelTemplate(Optional.of(MotorApple.id("block/floor_rock3")), Optional.of("3"), TextureSlot.TEXTURE);
 
     public MotorAppleBlockItemDataGen(FabricDataOutput output) {
         super(output);
@@ -38,11 +41,14 @@ public class MotorAppleBlockItemDataGen extends FabricModelProvider {
     }
 
     private void generateFloorRock(BlockModelGenerators generators, Block block, Block stoneBlock) {
-        FLOOR_BLOCK_MODEL.create(block, TextureMapping.defaultTexture(stoneBlock), generators.modelOutput);
+        FLOOR_BLOCK_MODEL1.create(block, TextureMapping.defaultTexture(stoneBlock), generators.modelOutput);
+        FLOOR_BLOCK_MODEL2.create(block, TextureMapping.defaultTexture(stoneBlock), generators.modelOutput);
+        FLOOR_BLOCK_MODEL3.create(block, TextureMapping.defaultTexture(stoneBlock), generators.modelOutput);
+        var blockName = BuiltInRegistries.BLOCK.getKey(block).getPath();
         generators.blockStateOutput.accept(MultiVariantGenerator.multiVariant(block,
-                Variant.variant().with(VariantProperties.MODEL, MotorApple.id("block/floor_rock")),
-                Variant.variant().with(VariantProperties.MODEL, MotorApple.id("block/floor_rock2")),
-                Variant.variant().with(VariantProperties.MODEL, MotorApple.id("block/floor_rock3"))));
+                Variant.variant().with(VariantProperties.MODEL, MotorApple.id("block/" + blockName)),
+                Variant.variant().with(VariantProperties.MODEL, MotorApple.id("block/" + blockName + "2")),
+                Variant.variant().with(VariantProperties.MODEL, MotorApple.id("block/" + blockName + "3"))));
     }
 
     @Override

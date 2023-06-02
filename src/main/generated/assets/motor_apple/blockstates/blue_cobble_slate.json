@@ -2,13 +2,13 @@
   "variants": {
     "": [
       {
-        "model": "motor_apple:block/floor_rock"
+        "model": "motor_apple:block/blue_cobble_slate"
       },
       {
-        "model": "motor_apple:block/floor_rock2"
+        "model": "motor_apple:block/blue_cobble_slate2"
       },
       {
-        "model": "motor_apple:block/floor_rock3"
+        "model": "motor_apple:block/blue_cobble_slate3"
       }
     ]
   }

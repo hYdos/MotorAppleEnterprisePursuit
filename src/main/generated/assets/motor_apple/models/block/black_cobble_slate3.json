@@ -1,5 +1,5 @@
 {
-  "parent": "motor_apple:block/floor_rock",
+  "parent": "motor_apple:block/floor_rock3",
   "textures": {
     "texture": "motor_apple:block/black_slate"
   }
